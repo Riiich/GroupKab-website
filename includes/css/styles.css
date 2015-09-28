@@ -1,0 +1,205 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:    Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+#team {
+   text-align: center;
+}
+
+#team img {
+   margin: 0 0 20px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+   /*
+   These two attributes are for FireFox and Chrome. 
+   It makes font more smooth and thinner.
+   */
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizelegibility;
+}
+
+.well .page-header {
+   margin-top: 0;
+}
+
+.well .page-header h1 {
+   margin-top: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   
+   /* Because YOURLOGO.png is larger then BT3 navbar size, so navbar becomes larger. It makes default row have space */
+   .navbar-brand {
+      padding: 13px 15px;
+   }
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel .item {
+   height: 400px;
+}
+
+#myCarousel {
+   margin-top: 0px; /* default zero */
+}
+
+.carousel-caption {
+   font-size: 20px;
+}
+
+.carousel-caption h4 {
+   font-size: 30px;
+}
+
+/* Set default image (background) */
+   #slide1 {
+      /* background: url('../../images/carousel/career-479578_960x494.jpg') top center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_1_960x640.png') top center no-repeat;
+   }
+
+   #slide2 {
+      /* background: url('../../images/carousel/taxicabs-498436_960x640.jpg') center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_2_960x640.png') center no-repeat;
+   }
+
+   #slide3 {
+      /* background: url('../../images/carousel/traffic-jam-688566_960x640.jpg') center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_4_960x480.png') top center no-repeat;
+   }
+
+   #slide4 {
+      /* background: url('../../images/carousel/city-skyline-719951_960x743.jpg') center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_5_960x643.png') bottom center no-repeat;
+   }
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert {
+   margin-top: 20px;
+   display: none; /* Don't show it by default */
+}
+
+.well {
+   margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+   margin: 0 20px 10px 0;
+}
+
+   #list-tab-in {
+      padding-left:3em
+   }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+   
+}
+
+/* Landscape phone to portrait tablet */
+/* Suggest: put 767px, not 768px, to avoid portiait iPads producing SMALL CSS while bootstrap.css is still in MEDIUM mode.*/
+/* Things like .visible-sm and hidden-sm don't happen until 767px, which 1px smaller then the iPAd screen.*/
+@media (max-width: 767px) {
+   #myCarousel .item {
+      height: 310px;
+   }
+
+   /* Set default image (background) size to medium one */
+   #slide1 {
+      /* background: url('../../images/carousel/career-479578_640.jpg') top center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_1_640x427.png') top center no-repeat;
+   }
+
+   #slide2 {
+      /* background: url('../../images/carousel/taxicabs-498436_640.jpg') bottom center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_2_640x427.png') center no-repeat;
+   }
+
+   #slide3 {
+      /* background: url('../../images/carousel/traffic-jam-688566_640.jpg') bottom center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_4_640x320.png') top center no-repeat;
+   }
+
+   #slide4 {
+      /* background: url('../../images/carousel/city-skyline-719951_640.jpg') bottom center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_5_640x428.png') bottom center no-repeat;
+   }
+
+   /* To avoid paragraph is larger then small screen */
+   .carousel-caption {
+      font-size: 16px;
+   }
+
+   .carousel-caption h4 {
+      font-size: 22px;
+   }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   #myCarousel .item {
+      height: 500px;
+   }
+
+   #slide1 {
+      /* background: url('../../images/carousel/career-479578_1280x658.jpg') top center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_1_1280x853.png') bottom center no-repeat;
+   }
+
+   #slide2 {
+      /* background: url('../../images/carousel/taxicabs-498436_1280x853.jpg') bottom center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_2_1280x853.png') center no-repeat;
+   }
+
+   #slide3 {
+      /* background: url('../../images/carousel/traffic-jam-688566_1280x853.jpg') bottom center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_4_1280x640.png') top center no-repeat;
+   }
+
+   #slide4 {
+      /* background: url('../../images/carousel/city-skyline-719951_1280x990.jpg') bottom center no-repeat; */
+      background: url('../../images/carousel_png/roadtrip_5_1280x857.png') bottom center no-repeat;
+   }
+   
+   .carousel-caption {
+   font-size: 24px;
+}
+
+.carousel-caption h4 {
+   font-size: 32px;
+}
+}
